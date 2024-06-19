@@ -72,6 +72,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import './components/DrinkButtons.jsx'
 import { DrinkButtons } from './components/DrinkButtons.jsx';
+// import { coffee, tea } from './utils/data';
+import { coffee, tea } from './utils/data.js';
 
 export const App = () => {
   const greeting = "Hello kaasling";
@@ -84,7 +86,7 @@ export const App = () => {
         <h1>{greeting}</h1>
         <h2>{welcome}</h2>
         {description}
-        <DrinkButtons />
+        <DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
         <p>If you don't like cheese, I wish you well.</p>
       </div>
       {/* <p className="read-the-docs">

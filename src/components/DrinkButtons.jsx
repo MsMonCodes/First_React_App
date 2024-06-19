@@ -1,14 +1,15 @@
 import './DrinkButtons.css'
+import { Button } from './UI/Button.jsx';
 
-export const DrinkButtons = () => {
+export const DrinkButtons = ({ drinkOne, drinkTwo }) => {
 
     return (
         <>
             <h3>"Herb water or bean water?</h3>
-            <button className="button-group">
-                <button className="button">herb water</button>
-                <button className="button">bean water</button>
-            </button>
+            <div className="button-group">
+                <Button text={drinkOne} />
+                <Button text={drinkTwo} />
+            </div>
         </>
     );
 };
