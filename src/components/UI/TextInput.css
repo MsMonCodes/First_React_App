@@ -1,0 +1,13 @@
+.textInput {
+    display: flex;
+    height: 2rem;
+    width: 20vw;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin: 1rem;
+    color: olive;
+    border-radius: 10px;
+    border: none;
+    background-color: aliceblue;
+}
