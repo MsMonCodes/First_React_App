@@ -74,11 +74,21 @@ import './components/DrinkButtons.jsx'
 import { DrinkButtons } from './components/DrinkButtons.jsx';
 // import { coffee, tea } from './utils/data';
 import { coffee, tea } from './utils/data.js';
+import { DrinkChoice } from './components/DrinkChoice.jsx';
+
 
 export const App = () => {
   const greeting = "Hello kaasling";
   const welcome = "Welcome to the KaasKlub!";
   const description = <p>This K.Klub is going to change your life.</p>;
+  const userDrink = coffee;
+  // const userChoice = (drink) => {
+  //   if (drink) {
+  //     reurn <DrinkChoice drink={drink} />
+  //   } else {
+  //     return 'Please select a drink';
+  //   }
+  // };
 
   return (
     <>
@@ -86,12 +96,16 @@ export const App = () => {
         <h1>{greeting}</h1>
         <h2>{welcome}</h2>
         {description}
-        <DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />
-        <p>If you don't like cheese, I wish you well.</p>
+
+        {/* <DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} /> */}
+        {/* {userDrink && <DrinkChoice drink={userDrink} />} */}
+        {userDrink ? (<DrinkChoice drink={userDrink} />) : (<DrinkButtons drinkOne={tea.name} drinkTwo={coffee.name} />)}
+
+        {/* <p>If you don't like cheese, I wish you well.</p> */}
       </div>
       {/* <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
     </>
-  )
-}
+  );
+};
