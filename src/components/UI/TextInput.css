@@ -1,5 +1,5 @@
 .textInput {
-    display: flex;
+    display: flexbox;
     height: 2rem;
     width: 20vw;
     align-items: center;

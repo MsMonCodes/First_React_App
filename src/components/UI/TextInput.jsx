@@ -4,10 +4,10 @@ import './TextInput.css';
 
 export const TextInput = () => {
     return (
-        <>
-            {/* <label>Search for a drink: </label> */}
+        <div>
+            <label>Search for a drink: </label>
             <input type="text" className="textInput"></input>
-        </>
+        </div>
 
     );
 };
