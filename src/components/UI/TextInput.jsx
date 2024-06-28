@@ -2,11 +2,11 @@
 
 import './TextInput.css';
 
-export const TextInput = () => {
+export const TextInput = ({ changeFn }) => {
     return (
         <div>
             <label>Search for a drink: </label>
-            <input type="text" className="textInput"></input>
+            <input type="text" className="textInput" onChange={changeFn}></input>
         </div>
 
     );
