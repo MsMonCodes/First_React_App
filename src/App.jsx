@@ -8,18 +8,29 @@ import { useState } from 'react';
 import { DrinkSearch } from './components/DrinkSearch.jsx';
 
 export const App = () => {
-  const greeting = "Hello kaasling";
-  const welcome = "Welcome to the KaasKlub!";
+  const heroText = "Hello kaasling";
+  const greeting = "Welcome to the KaasKlub!";
   const description = <p>This KKlub is going to change your life.</p>;
   const [userDrink, setUerDrink] = useState();
   const drinksHeader = "Drink menu";
+  const choiceHeader = "Your choice:";
+
   return (
     <div className="card">
-      <h1>{greeting}</h1>
-      <h2>{welcome}</h2>
-      <div>{description}</div>
-      <h3>{drinksHeader}</h3>
-      {userDrink ? (<DrinkChoice drink={userDrink} />) : (<DrinkSearch />)}
+      {userDrink ? (
+        <div>
+          <h3>{choiceHeader}</h3>
+          <DrinkChoice drink={userDrink} />
+        </div>
+      ) : (
+        <div>
+          <h1>{heroText}</h1>
+          <h2>{greeting}</h2>
+          <div>{description}</div>
+          <h3>{drinksHeader}</h3>
+          <DrinkSearch clickFn={setUerDrink} />
+        </div>
+      )}
     </div>
   );
 };

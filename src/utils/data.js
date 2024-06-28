@@ -14,28 +14,28 @@ const coffee = {
 
 const kombucha = {
     id: self.crypto.randomUUID(),
-    name: 'Kombucha',
+    name: 'Fermented tea',
     imgUrl: 'https://media.wincacademy.nl/kombucha.jpg',
     alt: `Picture of a kombucha drink`,
 };
 
 const orangeJuice = {
     id: self.crypto.randomUUID(),
-    name: 'Orange juice',
+    name: 'Fruit squeeze',
     imgUrl: 'https://media.wincacademy.nl/orange.png',
     alt: `Picture of a glass of orange juice`,
 };
 
 const water = {
     id: self.crypto.randomUUID(),
-    name: 'Water',
+    name: 'H2O',
     imgUrl: 'https://media.wincacademy.nl/water.png',
     alt: `Picture of a glass of water`,
 };
 
 const cola = {
     id: self.crypto.randomUUID(),
-    name: 'Cola',
+    name: 'The common pop',
     imgUrl: 'https://media.wincacademy.nl/cola.png',
     alt: `Picture of a glass of cola`,
 };

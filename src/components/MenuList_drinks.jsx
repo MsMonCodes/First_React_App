@@ -1,9 +1,11 @@
 import { MenuItem_drink } from "./MenuItem_drink";
 
-export const MenuList_drinks = ({ drinks }) => {
+export const MenuList_drinks = ({ drinks, clickFn }) => {
     return (
-        <ul>{drinks.map((drink) => (
-            <button><MenuItem_drink key={drink.id} drink={drink} /></button>
-        ))}</ul>
+        <>
+            {drinks.map((drink) => (
+                <MenuItem_drink key={drink.id} drink={drink} clickFn={clickFn} />
+            ))}
+        </>
     );
 }
