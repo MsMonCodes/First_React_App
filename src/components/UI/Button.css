@@ -1,12 +1,9 @@
 .Button {
-    /* background-color: antiquewhite; */
-    background-color: rgb(131, 139, 95);
-    /* border-radius: 10px; */
+    background-color: rgba(131, 139, 95, 0.205);
     border: none;
     justify-content: space-between;
     padding: 1rem;
     margin: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* color: rgb(59, 59, 59); */
-    color: rgb(29, 29, 29);
+    color: #7c856e;
 }

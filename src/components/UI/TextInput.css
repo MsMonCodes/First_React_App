@@ -6,9 +6,9 @@
     flex-direction: column;
     row-gap: 0.5rem;
     margin: 1rem;
-    color: olive;
+    padding-left: 1rem;
+    color: #7c856e;
     border-radius: 10px;
     border: none;
     background-color: #7c856e23;
-    /* background-color: white; */
 }
