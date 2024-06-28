@@ -20,7 +20,7 @@ export const App = () => {
       {userDrink ? (
         <div>
           <h3>{choiceHeader}</h3>
-          <DrinkChoice drink={userDrink} />
+          <DrinkChoice drink={userDrink} clickFn={setUerDrink} />
         </div>
       ) : (
         <div>

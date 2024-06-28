@@ -1,9 +1,11 @@
 import './Button.css';
 
-export const Button = ({ text }) => {
+export const Button = ({ text, clickFn }) => {
     return (
         <>
-            <button className='Button'>{text}</button>
+            <button className='Button' onClick={clickFn}>
+                {text}
+            </button>
         </>
     );
 };
