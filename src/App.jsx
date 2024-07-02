@@ -1,11 +1,12 @@
+import { Box, Center, Flex, Heading, Text } from '@chakra-ui/react'
 import viteLogo from '/vite.svg'
 import './App.css'
 // import './components/DrinkButtons.jsx'
-// import { DrinkButtons } from './components/DrinkButtons.jsx';
-// import { coffee, tea } from './utils/data.js';
-import { DrinkChoice } from './components/DrinkChoice.jsx';
-import { useState } from 'react';
-import { DrinkSearch } from './components/DrinkSearch.jsx';
+// import { DrinkButtons } from './components/DrinkButtons.jsx'
+// import { coffee, tea } from './utils/data.js'
+import { DrinkChoice } from './components/DrinkChoice.jsx'
+import { useState } from 'react'
+import { DrinkSearch } from './components/DrinkSearch.jsx'
 
 export const App = () => {
   const heroText = "Hello kaasling";
@@ -16,21 +17,23 @@ export const App = () => {
   const choiceHeader = "Your choice:";
 
   return (
-    <div className="card">
+    <Flex className="card" justifyContent={"center"} bg={'hsla(83, 9%, 90%, 0.871)'} >
       {userDrink ? (
-        <div>
-          <h3>{choiceHeader}</h3>
+        <Box>
+          <Heading paddingBlock={4} mb={8} textColor={'gray.700'}>{choiceHeader}</Heading>
           <DrinkChoice drink={userDrink} clickFn={setUerDrink} />
-        </div>
+        </Box>
       ) : (
         <div>
-          <h1>{heroText}</h1>
-          <h2>{greeting}</h2>
-          <div>{description}</div>
-          <h3>{drinksHeader}</h3>
+          <Box margin={6} paddingBlock={6} justifyItems={"center"}>
+            <Heading marginBottom={12} fontSize={"6xl"} color={'gray.700'}>{heroText}</Heading>
+            <Heading marginBottom={4} fontSize={"4xl"} color={'gray.600'}>{greeting}</Heading>
+            <Text marginBottom={6} color={'gray.500'}>{description}</Text>
+          </Box>
+          <Heading fontSize={"2xl"} color={'gray.600'}>{drinksHeader}</Heading>
           <DrinkSearch clickFn={setUerDrink} />
         </div>
       )}
-    </div>
+    </Flex>
   );
 };
