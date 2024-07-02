@@ -14,7 +14,7 @@ export const Button_Choice = ({ text, clickFn }) => {
                 shadow={'md'}
                 height={10}
                 width={'100%'}
-                variant='ghost'
+                variant={'ghost'}
                 // leftIcon={< img src={drink.imgUrl} width={40} height={30} alt={drink.alt} />}
                 // rightIcon={drink.name}
                 marginBottom={8}
