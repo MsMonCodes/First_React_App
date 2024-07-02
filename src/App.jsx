@@ -17,22 +17,22 @@ export const App = () => {
   const choiceHeader = "Your choice:";
 
   return (
-    <Flex className="card" justifyContent={"center"} bg={'hsla(83, 9%, 90%, 0.871)'} >
+    <Flex className='App' justifyContent={"center"} bg={'hsla(83, 9%, 95%, 0.871)'} width={'100%'} >
       {userDrink ? (
-        <Box>
-          <Heading paddingBlock={4} mb={8} textColor={'gray.700'}>{choiceHeader}</Heading>
+        <Box padding={8}>
+          <Heading paddingBlock={4} mb={8} fontSize={"3xl"} color={'gray.600'}>{choiceHeader}</Heading>
           <DrinkChoice drink={userDrink} clickFn={setUerDrink} />
         </Box>
       ) : (
-        <div>
+        <Box>
           <Box margin={6} paddingBlock={6} justifyItems={"center"}>
             <Heading marginBottom={12} fontSize={"6xl"} color={'gray.700'}>{heroText}</Heading>
-            <Heading marginBottom={4} fontSize={"4xl"} color={'gray.600'}>{greeting}</Heading>
+            <Heading marginBottom={4} fontSize={"2xl"} color={'gray.600'}>{greeting}</Heading>
             <Text marginBottom={6} color={'gray.500'}>{description}</Text>
           </Box>
-          <Heading fontSize={"2xl"} color={'gray.600'}>{drinksHeader}</Heading>
+          <Heading fontSize={"3xl"} color={'gray.600'}>{drinksHeader}</Heading>
           <DrinkSearch clickFn={setUerDrink} />
-        </div>
+        </Box>
       )}
     </Flex>
   );

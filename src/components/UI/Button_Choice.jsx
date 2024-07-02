@@ -1,4 +1,4 @@
-import { Button } from '@chakra-ui/react'
+import { Button, Flex, Grid } from '@chakra-ui/react'
 // import './Button_Choice.css';
 
 export const Button_Choice = ({ text, clickFn }) => {
@@ -10,10 +10,10 @@ export const Button_Choice = ({ text, clickFn }) => {
                 size='mg'
                 color={'blackAlpha.600'}
                 bg={'whiteAlpha.400'}
-                borderRadius={15}
                 shadow={'md'}
                 height={10}
                 width={'100%'}
+                padding={4}
                 variant={'ghost'}
                 // leftIcon={< img src={drink.imgUrl} width={40} height={30} alt={drink.alt} />}
                 // rightIcon={drink.name}

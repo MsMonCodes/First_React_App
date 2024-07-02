@@ -35,7 +35,7 @@ const water = {
 
 const cola = {
     id: self.crypto.randomUUID(),
-    name: 'The common pop',
+    name: 'Common pop',
     imgUrl: 'https://media.wincacademy.nl/cola.png',
     alt: `Picture of a glass of cola`,
 };

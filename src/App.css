@@ -1,7 +1,8 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0rem, 100rem;
+  /* margin: 50px; */
   text-align: center;
 }
 
@@ -37,7 +38,7 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 0em;
 }
 
 .read-the-docs {
@@ -47,6 +48,9 @@
 .App {
   display: flexbox;
   align-items: center;
-  height: 50vh;
-  width: 30vw
+  height: 100%;
+  width: 66vw;
+  padding-top: 5ch;
+  padding-bottom: 15ch;
+  margin-bottom: 0rem;
 }
