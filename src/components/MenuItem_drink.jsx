@@ -40,23 +40,18 @@ export const MenuItem_drink = ({ drink, clickFn }) => {
         <Flex justifyItems={'center'} gap='2'
             direction={'column'} w={'100%'} h={'absolute'}
             spacing={4}
-            p={2}
+            p={[5, 10], [2, 4]}
         >
             <ButtonGroup
                 borderRadius={20}
                 shadow={'md'}
-                // bg={'hsla(83, 9%, 90%, 0.871)'}
-                // bg={'blackAlpha.100'}
                 bg={'whiteAlpha.400'}
             >
                 <Button
                     onClick={() => clickFn(drink)}
                     colorScheme='blackAlpha'
                     borderRadius={15}
-                    size='mg'
-                    // textColor={'blackAlpha.600'}
-                    // '#7c856ede'
-                    // color=
+                    size={'md'}
                     height={20}
                     width={'100%'}
                     variant='ghost'
